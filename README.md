@@ -4,7 +4,7 @@
 # Kullanımı
 ADFramework.php isimli dosyayı proje klasörünüze atın ve kullanacağınız sayfalara dahil edin.
 
-## Veritabanı İşlemleri
+### Veritabanı İşlemleri
 ```php
 //Veritabanına bağlanma
 $baglan = baglan("host", "dbname", "username", "password");
@@ -30,4 +30,12 @@ $guncelle = veriGuncelle($baglan, "tablo", array(stun isimleri), array(veriler),
 
 //Veritabanındaki verileri say
 echo veriSay($baglan, "tablo");
+```
+### Genel Kullanımlar
+```php
+//Güvenli post işlemleri
+post('gelenVeri');
+
+//Kullanıcının ip adresini çekme
+getIP();
 ```
